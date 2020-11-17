@@ -1,0 +1,15 @@
+[submodule "factions"]
+	path = factions
+	url = https://github.com/Ascii/Factions
+[submodule "MassiveCore"]
+	path = MassiveCore
+	url = https://github.com/Ascii/MassiveCore
+[submodule "MassiveSuper"]
+	path = MassiveSuper
+	url = https://github.com/Ascii/MassiveSuper
+[submodule "MassiveCoreXlib"]
+	path = MassiveCoreXlib
+	url = https://github.com/Ascii/MassiveCoreXlib
+[submodule "MassiveCoreXlibGuava"]
+	path = MassiveCoreXlibGuava
+	url = https://github.com/Ascii/MassiveCoreXlibGuava

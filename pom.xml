@@ -1,0 +1,20 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <!-- Basics -->
+    <groupId>com.massivecraft</groupId>
+    <artifactId>MassiveCraft</artifactId>
+    <version>1.0.0</version>
+    <packaging>pom</packaging>
+    <!-- Modules -->
+    <modules>
+        <module>MassiveCore</module>
+        <module>MassiveCoreXlib</module>
+        <module>MassiveCoreXlibGuava</module>
+        <module>MassiveSuper</module>
+        <module>Factions</module>
+    </modules>
+    <!-- Build -->
+    <build>
+        <defaultGoal>install</defaultGoal>
+    </build>
+</project>
