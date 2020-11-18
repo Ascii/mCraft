@@ -10,3 +10,6 @@
 [submodule "MassiveCoreXlibGuava"]
 	path = MassiveCoreXlibGuava
 	url = https://github.com/Ascii/MassiveCoreXlibGuava
+[submodule "Factions"]
+	path = Factions
+	url = https://github.com/Ascii/Factions.git
