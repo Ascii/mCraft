@@ -1,6 +1,3 @@
-[submodule "factions"]
-	path = factions
-	url = https://github.com/Ascii/Factions
 [submodule "MassiveCore"]
 	path = MassiveCore
 	url = https://github.com/Ascii/MassiveCore
