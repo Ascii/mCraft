@@ -1,0 +1,26 @@
+name: BuildPlugin
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up JDK 1.8
+      uses: actions/setup-java@v1
+      with:
+        java-version: 1.8
+    - name: Build
+      run: |
+        mvn install:install-file -DgroupId=mineverse.Aust1n46.chat -DartifactId=MineverseChat -Dversion=2.20.2 -Dpackaging=jar -Dfile=./ext/VentureChat.jar
+        mvn clean install
+    - name: Get Factions and MassiveCore
+      uses: actions/upload-artifact@v2
+      with:
+        name: mCraft
+        path: |
+          Factions/target/Factions.jar
+          MassiveCore/target/MassiveCore.jar  
