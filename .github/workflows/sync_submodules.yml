@@ -27,7 +27,7 @@ jobs:
       - name: Checkout Submodules and Pull all the changes in
         run: |
           git submodule update --init --recursive --jobs 5
-          git pull --recurse-submodules
+          git submodule update --recursive --remote
 
       # Runs a set of commands using the runners shell
       - name: Commit Submodule Updates
