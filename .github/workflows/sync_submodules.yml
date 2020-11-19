@@ -28,8 +28,8 @@ jobs:
           git submodule update --init --recursive --jobs 5
           git submodule update --recursive --remote
       
-      - name: Add Changed Files
-        run: git add -A
+      - name: Commit Changed Files
+        run: git commit -A
 
       # Runs a set of commands using the runners shell
       - name: Commit Submodule Updates
