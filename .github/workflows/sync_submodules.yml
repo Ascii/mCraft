@@ -20,8 +20,8 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
       - run: |
-          git config --global user.email BOK_EMAIL
-          git config --global user.name BOK_NAME
+          git config --global user.email ${{ secrets.BOK_EMAIL }}
+          git config --global user.name ${{ secrets.BOK_NAME }}
 
       - name: Checkout Submodules and Pull all the changes in
         run: |
