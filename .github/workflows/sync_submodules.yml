@@ -23,11 +23,13 @@ jobs:
           git config --global user.email BOK_EMAIL
           git config --global user.name BOK_NAME
 
-      # Runs a single command using the runners shell
       - name: Checkout Submodules and Pull all the changes in
         run: |
           git submodule update --init --recursive --jobs 5
           git submodule update --recursive --remote
+      
+      - name: Add Changed Files
+        run: git add -A
 
       # Runs a set of commands using the runners shell
       - name: Commit Submodule Updates
