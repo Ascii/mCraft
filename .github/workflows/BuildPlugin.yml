@@ -13,10 +13,14 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 1.8
+    - name: Sync
+      run: |
+        git submodule sync --recursive
+        git submodule update --init --recursive
     - name: Build
       run: |
         mvn install:install-file -DgroupId=mineverse.Aust1n46.chat -DartifactId=MineverseChat -Dversion=2.20.2 -Dpackaging=jar -Dfile=./ext/VentureChat.jar
-        mvn clean install
+        mvn clean install -X
     - name: Get Factions and MassiveCore
       uses: actions/upload-artifact@v2
       with:
