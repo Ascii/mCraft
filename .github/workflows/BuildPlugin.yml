@@ -5,6 +5,7 @@ on:
 
 jobs:
   build:
+    name: Build mCraft ${{ github.run_id }}
     runs-on: ubuntu-latest
 
     steps:
@@ -24,7 +25,7 @@ jobs:
     - name: Get Factions and MassiveCore
       uses: actions/upload-artifact@v2
       with:
-        name: mCraft
+        name: mCraft-${{ github.run_id }}
         path: |
           Factions/target/Factions.jar
           MassiveCore/target/MassiveCore.jar  
