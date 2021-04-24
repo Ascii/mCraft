@@ -1,15 +1,20 @@
 [submodule "MassiveCore"]
 	path = MassiveCore
 	url = https://github.com/Ascii/MassiveCore
+	branch = dev-build
 [submodule "MassiveSuper"]
 	path = MassiveSuper
 	url = https://github.com/Ascii/MassiveSuper
+	branch = dev-build
 [submodule "MassiveCoreXlib"]
 	path = MassiveCoreXlib
 	url = https://github.com/Ascii/MassiveCoreXlib
+	branch = dev-build
 [submodule "MassiveCoreXlibGuava"]
 	path = MassiveCoreXlibGuava
 	url = https://github.com/Ascii/MassiveCoreXlibGuava
+	branch = dev-build
 [submodule "Factions"]
 	path = Factions
 	url = https://github.com/Ascii/Factions.git
+	branch = dev-build
