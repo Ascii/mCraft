@@ -2,7 +2,7 @@
 A MassiveCraft Repo - A Repo for building stuff.
 >I needed a repo to automate builds. ~[Ascii](https://github.com/Ascii)
 
-Submodules in this repo will automatically update when their default branch is updated.
+Submodules in this repo are set to the dev-build branch.
 Builds are currently set to trigger manually by me. Artifacts will have Factions.jar and MassiveCore.jar when build succeeds.
 
 # Submodule's Repos
